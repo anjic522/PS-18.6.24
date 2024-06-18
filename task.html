@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        1) Write a js program to print lower case first followed by upper case letters.
+input : Enter a string: I am Good
+amoodIG.
+
+2) Write a js program to print one lower letter next one upper letter and so.. on.
+
+input: Enter a string: I am Good
+aImGood
+    </h1>
+    <script>
+        str="I am Good"
+up="",low=""
+for(i of str){
+    if(i!=" "){
+        if(i.toUpperCase()==i){
+            up=up+i
+        }
+        else{
+        low=low+i
+        }  
+    }
+    
+      
+}
+console.log("lower case first followed by upper case letters:  ",up+low)
+upper=up,lower=low,change=""
+for(i=0;i<lower.length;i++){
+if(upper[i]!==undefined){
+    change=change+lower[i]+upper[i]
+}
+else
+change=change+lower[i]
+
+}
+console.log(" one lower letter next one upper letter and so.. on:  ",change)
+
+    </script>
+</body>
+</html>
